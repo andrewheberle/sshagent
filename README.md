@@ -4,12 +4,9 @@
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/andrewheberle/sshagent)
 [![codecov](https://codecov.io/gh/andrewheberle/sshagent/graph/badge.svg?token=MNFPOWU3VV)](https://codecov.io/gh/andrewheberle/sshagent)
 
-This package provides an OS independent way to connect to a running "ssh-agent" process
-which returns an `sshagent.*Agent` that is a wrapper for [golang.org/x/crypto/ssh/agent.ExtendedAgent](https://pkg.go.dev/golang.org/x/crypto/ssh/agent#ExtendedAgent).
+This package provides an OS independent way to connect to a running "ssh-agent" process which returns an `sshagent.*Agent` that is a wrapper for [golang.org/x/crypto/ssh/agent.ExtendedAgent](https://pkg.go.dev/golang.org/x/crypto/ssh/agent#ExtendedAgent).
 
-On Windows, named pipes are used to connect to a local "ssh-agent", while on other platforms
-the "SSH_AUTH_SOCK" environment variable is expected to contain the path to a unix socket
-in order to communicate with the running "ssh-agent".
+On Windows, named pipes are used to connect to a local "ssh-agent", while on other platforms the "SSH_AUTH_SOCK" environment variable is expected to contain the path to a unix socket in order to communicate with the running "ssh-agent".
 
 ## Example
 
