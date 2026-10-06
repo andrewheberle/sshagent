@@ -17,6 +17,7 @@ func ExampleNewAgent() {
 
 		return
 	}
+	defer client.Close()
 
 	if _, err := client.List(); err != nil {
 		fmt.Printf("error listing keys from agent")

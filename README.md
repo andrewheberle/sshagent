@@ -25,6 +25,7 @@ func main() {
 		fmt.Printf("error connecting to agent")
         os.Exit(1)
 	}
+	defer client.Close()
 
 	if _, err := client.List(); err != nil {
 		fmt.Printf("error listing keys from agent")
