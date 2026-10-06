@@ -1,6 +1,6 @@
 module github.com/andrewheberle/sshagent
 
-go 1.24.2
+go 1.25.0
 
 require (
 	github.com/Microsoft/go-winio v0.6.2
